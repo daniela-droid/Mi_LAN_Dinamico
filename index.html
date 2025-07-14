@@ -1,0 +1,141 @@
+<!DOCTYPE html >
+<html>
+	<body>
+		<header style="background-color: lightblue;">
+			<button onclick="alert('Estas aprendiendo los permisos de linux!!')"> Para el Usuario</button>
+	 <h1 style="text-align:center;font-family:Arial, sans-serif;color:green;">Permisos en Linux</h1>
+<style>
+header{
+	width:100%;/*ocupa todo el ancho*/
+	padding:10px;/*aniade un spacio interno*/
+
+}
+</style>
+		</header>
+		
+	</body>	
+<head>
+		</head>
+
+<main>
+<body>
+	
+	 <h3 style="color:blue;text-align:center;font-family:Arial, sans-serif;">Acerca de: Explicando los permisos de linux en Binario y octal.</h3>
+	<h2 style="color:green;"> Importancia del manejo de permisos en Linux.</h2>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmAzXmMtNIXcMtt4fTaEn6v_TWP_DblRv2pg&s">
+	<h3 style="color:blue;"> Permisos en General:<h3>
+	<p style="color:green;">Los clasicos rwx-rwx-rwx</p>
+
+<style>
+body { background-color:#ffffff;
+}
+</style>
+<style>
+table {
+	border-collapse: collapse;
+	whidth: 100%; /* 0 un valor fijo en px */
+	margin-bottom;20px;/*margen inferior*/
+	font-family:Arial,sans-serfif;
+	 td {
+		border: 5px solid #ddd;/*borde para celdas*/
+		padding: 10px; /* espcio entre el borde y el contenido*/
+		text-align: left; /*Alineacion del texto de la celda*/
+		
+	}
+	th{
+		padding:5px;
+		border:1px solid black;
+		background-color:#f0f8ff;/*color de fondo para los encabezados*/
+		font-weigth:bold; /*texto negrita*/
+		color:#333;
+		font-family:'YourChosenFont',sans-serif;
+	}
+	tr:nth-child(even){
+		background-color:skyblue;/*color de fondo para filas*/
+
+	}
+	tr{
+		background-color:#ddd;
+	}
+</style>
+	<table>
+	
+	<tr>
+		<th>Root</th>
+		<th>Grupo Root</th>
+		<th>Otros usuarios</th>
+		<th>Permisos</th>
+	</tr>
+	
+	
+		<tr>
+			<th>Primeros rwx</th>
+			<th>Segundos rwx</th>
+			<th>Tercero rwx</th>
+			<th>111 Todos los permisos</th>
+		</tr>
+	</table>
+	
+		<h2 style="color:blue;font-family:Arial,sans-serif;">Los permisos en binario.</h2>
+	<p>Los permisos en binario son mas faciles que en octal, ya que es mas facil adivinar cuando tienen<br>
+	todos los permisos o no los tiene:<br> Ejemplo sencillo:<br>111 indica todos los permisos, 000 No tiene<br>
+	ningun permiso.</p>
+	<h2 style="font-family: Arial, sans-serif;">Pero a todo esto de que permisos hablamos? Nada mas y menos que los permisos de:</h2>
+	<p style="color:red;">Lectura, Escritura y ejecucion</P>
+
+	<p>Tambien estan los directorios, que aparecen de la siguiente manera drwx-rwx-r-- en este caso los otros usuarios<br>
+	solo tienen permiso de lectura, la d es el directorio y solo el super usuario y el grupo sudo tienen acceso, espero<br>
+	que la siguiente tabla te ilumine, estos permisos los podemos observar con el comando ls o ls -l para listar archivos</p>
+	<table>
+		<tr>
+			<th>rwx-root</th>
+			<th>rwx-grupoRoot</th>
+			<th>rwx-otros</th>
+			<th> Sin Permisos</th>
+			<th>Con Permisos</th>
+			<th>Permisos de Lectura</th>
+			<th>Permisos de Escritura</th>
+			<th>Permisos de Ejecucion</th>
+		</tr>
+		<tr>
+		
+			<th>drwx</th>
+			<th>rwx</th>
+			<th>r--</th>
+			<th>000(Todos tienen algun permiso) </th>
+			<th>111(root y el grupo sudo)</th>
+			<th>100(los otros usuarios)</th>
+			<th>010(root y grupo)</th>
+			<th>001(root y grupo)</th>
+<style>
+button{
+	background-color:#4CAF50;/*color verde*/
+	border:none;
+	color:white;
+	padding:10px 20px;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:16px;
+	margin:4px 2px;
+	cursor:pointer;
+	border-radius:5px;
+}
+</style>
+
+		</tr>
+	</table>
+
+
+	<a class="button"href="Panel.html">Siguiente</a>
+
+
+
+
+
+
+</body>
+
+</html>
+<!--PANEL -->
+

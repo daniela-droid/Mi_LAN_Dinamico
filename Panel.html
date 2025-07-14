@@ -1,0 +1,134 @@
+<!DOCTYPE>
+<html>
+
+	<head>
+
+		<body>
+			<header style="background-color:lightgreen;">
+	<h1 style="color:blue;font-family:Arial,sans-serif;">Permisos en Octal</h1>
+
+<style>
+header{
+width:100%;
+padding:10px;
+}
+</style>
+			</header>
+		</body>
+		<main>
+<body>
+	 <h2 style="font-family: Arial, sans-serif;"> Los permisos en octal, tienen 3 numeros clave y es el valor de cada permiso.</h2>
+		<p style="font-family:Arial, sans-serif;"> Aqui lectura vale 4, escritura vale 2 y ejecucion vale 1, Juntos forman un 7,<br> A continuacion te explicare como se ven en los rwx-rwx-rwx.</p>
+
+		<h2 style="font-family: Arial, sans-serif;">En este espacio he creado 3 tablas para explicarte al final como tu puedes<br> interpretar esos permisos en octal.</h2>
+<p> Digamos que tenemos una carpeta d entonces las tablas representan los privilegios que tienen sobre ella</p>
+<h2>Tabla rwx-> root</h2>
+<style>
+table{
+border-collapse:collapse;
+whidth:100%;
+margin-botton:20px;
+font-family:Arial, sans-serif;
+	
+}
+td{
+border:5px solid;
+padding:10px;
+text-align: left;
+}
+th{
+padding:5px;
+border:1px solid black;
+
+}
+</style>
+<table>
+	<tr>
+		<th>drwx</th>
+		<th>r</th>
+		<th>w</th>
+		<th>x</th>
+	</tr>
+	<tr>
+		<th>Carpeta y usuario root</th>
+
+		<th>4</th>
+
+		<th> 2</th>
+
+		<th>1</th>
+		<caption>Total 7 root tiene todos los permisos.</caption>
+</table>
+
+<h2>Tabla rwx-> Grupo sudo</h2>
+
+</style>
+<table>
+	<tr>
+		<th>drwx</th>
+		<th>r</th>
+		<th>w</th>
+		<th>x</th>
+	</tr>
+	<tr>
+		<th>Carpeta y grupo sudo</th>
+
+		<th>4</th>
+
+		<th> 0</th>
+
+		<th>1</th>
+		<caption>Total 5 tiene permisos de lectura y ejecucion.</caption>
+</table>
+
+<h2>Tabla rwx-> otros usuarios</h2>
+
+</style>
+<table>
+	<tr>
+		<th>drwx</th>
+		<th>r</th>
+		<th>w</th>
+		<th>x</th>
+	</tr>
+	<tr>
+		<th>Carpeta y otros usuarios</th>
+
+		<th>4</th>
+
+		<th> 0</th>
+
+		<th>0</th>
+		<caption>Total 4 tiene permisos de lectura, por lo que no puede editar ni ejecutar.</caption>
+</table>
+<p style="font-family:Arial,sans-serif;">En total sumados los permisos con chmod se verian como 754 para los permisos que tienen sobre la carpeta</p>
+<p style="font-family:Arial,sans-serif;">Si te ha gustado puedes dejar un breve comentario.</p>
+
+
+<style>
+
+button{
+	background-color:#4CAF50;/*color verde*/
+	border:none;
+	color:white;
+	padding:10px 20px;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:16px;
+	margin:4px 2px;
+	cursor:pointer;
+	border-radius:5px;
+}
+</style>
+<a class="button"href="prueba.php">Dejar comentario</a> <br>
+
+	<a class="button"href="index.html">Volver a la pagina principal</a>
+
+
+
+</body>
+
+	</head>
+
+</html>
